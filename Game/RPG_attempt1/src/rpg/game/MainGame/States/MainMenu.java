@@ -99,8 +99,8 @@ public class MainMenu extends BasicGameState {
 		
 //		if(overNewGame && in.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON))
 //			sbg.enterState(3);
-//		if(overLoadGame && in.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON))
-//			sbg.enterState(2);
+		if(overLoadGame && in.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON))
+			sbg.enterState(99);
 //		if(overOptions && in.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON))
 //			sbg.enterState(1);
 		if(overExit && in.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON))

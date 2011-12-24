@@ -14,12 +14,15 @@ public class MainGame extends StateBasedGame {
 	public final int OPTIONS = 1;
 	public final int LOADMENU = 2;
 	public final int INTROMOVIE = 3;
+	
+	public final int SPRITETEST = 99;
 	//TODO add any additional states
 
 	public MainGame() {
 		super("RPG");
 		
 		this.addState(new MainMenu(MAINMENU));
+		this.addState(new SpriteTest(SPRITETEST));
 		//TODO add all states
 		
 		this.enterState(MAINMENU);
@@ -41,6 +44,7 @@ public class MainGame extends StateBasedGame {
 //		this.getState(OPTIONS).init(gc, this);
 //		this.getState(LOADMENU).init(gc, this);
 //		this.getState(INTROMOVIE).init(gc, this);
+		this.getState(SPRITETEST).init(gc, this);
 		//TODO add any additional states
 
 	}
